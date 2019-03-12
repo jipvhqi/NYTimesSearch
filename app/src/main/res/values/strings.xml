@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The New York Times</string>
+    <string name="action_search">Search</string>
+    <string name="hint">Enter search query</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="news_desk_arts">Arts</string>
+    <string name="news_desk_fashion">Fashion &amp; Style</string>
+    <string name="news_desk_sports">Sports</string>
+    <string name="email">Email</string>
+</resources>

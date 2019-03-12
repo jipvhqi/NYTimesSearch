@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/tvBeginDateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorIrisBlue"
+            android:text="Begin Date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBeginDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@id/tvBeginDateTitle"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvSortByTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorIrisBlue"
+            android:text="Sort Order"
+            app:layout_constraintTop_toBottomOf="@id/tvBeginDate"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Spinner
+            android:id="@+id/spinnerSortOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sortby_array"
+            app:layout_constraintTop_toBottomOf="@id/tvSortByTitle"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvNewsDeskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorIrisBlue"
+            android:text="News Desk Values"
+            app:layout_constraintTop_toBottomOf="@id/spinnerSortOrder"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox android:id="@+id/checkbox_arts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/news_desk_arts"
+            app:layout_constraintTop_toBottomOf="@id/tvNewsDeskTitle"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <CheckBox android:id="@+id/checkbox_fashion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/news_desk_fashion"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_arts"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <CheckBox android:id="@+id/checkbox_sports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/news_desk_sports"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_fashion"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorIrisBlue"
+            android:textColor="@color/colorWhite"
+            android:text="Save"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_sports"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
